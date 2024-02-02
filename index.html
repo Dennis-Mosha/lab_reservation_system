@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lab Reservation System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lab Reservation System</h1>
+        <form id="reservationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="lab">Select Lab:</label>
+            <select id="lab" required>
+                <option value="lab1">Lab 1</option>
+                <option value="lab2">Lab 2</option>
+                <!-- Add more labs as needed -->
+            </select>
+
+            <label for="equipment">Select Equipment:</label>
+            <select id="equipment" multiple required>
+                <option value="equipment1">Equipment 1</option>
+                <option value="equipment2">Equipment 2</option>
+                <!-- Add more equipment as needed -->
+            </select>
+
+            <button type="submit">Book Lab</button>
+        </form>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
